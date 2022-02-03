@@ -139,14 +139,6 @@ pak:
 			CntPrnt=SysTickCntr+5000;
 			if (StageFlg){OffCPUSecLED;}else{OnCPUSecLED;}
 		}
-/*
-                if (TIM2->CNT>=32000000U) //timer counts with 72MHz, i.e. here we have 0.5s
-                {
-                        StageFlg=1-StageFlg;
-                        TIM2->CNT=0;
-                        if (StageFlg){OffCPUSecLED;}else{OnCPUSecLED;}
-                }
-*/
 
 		if (RSS.ErrCod)
 		{
